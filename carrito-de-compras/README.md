@@ -1,4 +1,4 @@
-#Project created with class components
+## Project created with class components
 
 ## Getting Started with Create React App
 
