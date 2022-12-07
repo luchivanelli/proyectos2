@@ -9,6 +9,7 @@
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -106,9 +107,31 @@
         margin-bottom: 30px;
     }
 
+    .grupos {
+        margin: 0 auto 20px;
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .grupo-nombre {
+        font-size: 12px;
+        min-width: 46px;
+        padding: 4px;
+        text-decoration: none;
+        color: var(--color-3);
+    }
+
+    .grupo-nombre:hover {
+        transform: scale(1.05);
+        color: var(--color-1);
+    }
+
     .titulo-grupo {
         text-align: center;
-        font-size: 24px;
+        font-size: 20px;
         letter-spacing: 2px;
         color: var(--color-2);
         font-weight: 500;
@@ -122,13 +145,101 @@
         border-bottom: 4px solid var(--color-3);
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
     }
 
     .pais-titulo {
         color: #000;
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .pais-img img {
+        width: 60%;
+    }
+
+    .boton {
+        height: 40px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 0 10px 20px;
+        background-color: var(--color-1);
+        border-radius: 50%;
+        transition: background-color 1s;
+    }
+
+    .boton a {
+        font-size: 30px;
+        padding: 10px;
+        color: var(--color-2);
+        transition: color 1s;
+    }
+
+    .boton:hover {
+        background-color: var(--color-3);
+        transition: background-color 0.3s;
+    }
+
+    .boton a:hover {
+        color: #000;
+        transition: color 0.3s;
+    }
+
+    .span-tabla {
+        color: var(--color-1);
+        font-size: 14px;
+        padding: 4px;
+        cursor: pointer;
+    }
+
+    .tablas {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.523);
+        z-index: 2;
+        top: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        margin: auto;
+    }
+
+    .tabla-contenido {
+        width: 90%;
+        background-color: var(--color-2);
+        padding: 0 10px 30px;
+    }
+
+    .tabla-nombre {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .td {
+        font-size: 14px;
+        padding: 2px;
+        text-align: center;
+        border: 1px solid #000;
+    }
+
+    .td-principal {
+        color: var(--color-1);
+    }
+
+    .salir {
+        cursor: pointer;
+        display: flex;
+        justify-content: end;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 8px;
+        color: var(--color-1);
     }
 }
 

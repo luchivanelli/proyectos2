@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="stylesheet" href="./style.css">
     <title>Qatar 2022</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header-icon">
             <img src="./img/icon-header-2.png" alt="Qatar 2022">
         </div>
@@ -26,9 +35,19 @@
         <h1 class="titulo">Copa del Mundo <b>Qatar 2022</b></h1>
         <section class="equipos" id="equipos">
             <h2>Equipos clasificados</h2>
+            <div class="grupos">
+                <a class="grupo-nombre" href="#grupoA">GRUPO A</a>
+                <a class="grupo-nombre" href="#grupoB">GRUPO B</a>
+                <a class="grupo-nombre" href="#grupoC">GRUPO C</a>
+                <a class="grupo-nombre" href="#grupoD">GRUPO D</a>
+                <a class="grupo-nombre" href="#grupoE">GRUPO E</a>
+                <a class="grupo-nombre" href="#grupoF">GRUPO F</a>
+                <a class="grupo-nombre" href="#grupoG">GRUPO G</a>
+                <a class="grupo-nombre" href="#grupoH">GRUPO H</a>
+            </div>
             <div class="grupos-tablas">
-                <div class="grupo">
-                    <h3 class="titulo-grupo">Grupo A</h3>
+                <div class="grupo" id="grupoA">
+                    <h3 class="titulo-grupo">Grupo A</h3><span class="span-tabla">Ver tabla</span>
                     <div class="pais">
                         <div class="pais-img">
                             <img src="./img/icons8-katar-96.png" alt="Qatar">
@@ -54,8 +73,8 @@
                         <h4 class="pais-titulo">Paises Bajos</h4>
                     </div>
                 </div>
-                <div class="grupo">
-                    <h3 class="titulo-grupo">Grupo B</h3>
+                <div class="grupo" id="grupoB">
+                    <h3 class="titulo-grupo">Grupo B</h3><span class="span-tabla">Ver tabla</span>
                     <div class="pais">
                         <div class="pais-img">
                             <img src="./img/icons8-inglaterra-96.png" alt="Inglaterra">
@@ -81,8 +100,8 @@
                         <h4 class="pais-titulo">Gales</h4>
                     </div>
                 </div>
-                <div class="grupo">
-                    <h3 class="titulo-grupo">Grupo C</h3>
+                <div class="grupo" id="grupoC">
+                    <h3 class="titulo-grupo">Grupo C</h3><span class="span-tabla">Ver tabla</span>
                     <div class="pais">
                         <div class="pais-img">
                             <img src="./img/icons8-argentina-96.png" alt="Argentina">
@@ -108,8 +127,8 @@
                         <h4 class="pais-titulo">Polonia</h4>
                     </div>
                 </div>
-                <div class="grupo">
-                    <h3 class="titulo-grupo">Grupo D</h3>
+                <div class="grupo" id="grupoD">
+                    <h3 class="titulo-grupo">Grupo D</h3><span class="span-tabla">Ver tabla</span>
                     <div class="pais">
                         <div class="pais-img">
                             <img src="./img/icons8-francia-96.png" alt="Francia">
@@ -135,8 +154,8 @@
                         <h4 class="pais-titulo">Túnez</h4>
                     </div>
                 </div>
-                <div class="grupo">
-                    <h3 class="titulo-grupo">Grupo E</h3>
+                <div class="grupo" id="grupoE">
+                    <h3 class="titulo-grupo">Grupo E</h3><span class="span-tabla">Ver tabla</span>
                     <div class="pais">
                         <div class="pais-img">
                             <img src="./img/icons8-españa-96.png" alt="España">
@@ -162,8 +181,8 @@
                         <h4 class="pais-titulo">Japón</h4>
                     </div>
                 </div>
-                <div class="grupo">
-                    <h3 class="titulo-grupo">Grupo F</h3>
+                <div class="grupo" id="grupoF">
+                    <h3 class="titulo-grupo">Grupo F</h3><span class="span-tabla">Ver tabla</span>
                     <div class="pais">
                         <div class="pais-img">
                             <img src="./img/icons8-bélgica-96.png" alt="Bélgica">
@@ -189,8 +208,8 @@
                         <h4 class="pais-titulo">Croacia</h4>
                     </div>
                 </div>
-                <div class="grupo">
-                    <h3 class="titulo-grupo">Grupo G</h3>
+                <div class="grupo" id="grupoG">
+                    <h3 class="titulo-grupo">Grupo G</h3><span class="span-tabla">Ver tabla</span>
                     <div class="pais">
                         <div class="pais-img">
                             <img src="./img/icons8-brasil-96.png" alt="Brasil">
@@ -216,8 +235,8 @@
                         <h4 class="pais-titulo">Camerún</h4>
                     </div>
                 </div>
-                <div class="grupo">
-                    <h3 class="titulo-grupo">Grupo H</h3>
+                <div class="grupo" id="grupoH">
+                    <h3 class="titulo-grupo">Grupo H</h3><span class="span-tabla">Ver tabla</span>
                     <div class="pais">
                         <div class="pais-img">
                             <img src="./img/icons8-portugal-96.png" alt="Portugal">
@@ -245,7 +264,29 @@
                 </div>
             </div>
         </section>
-        <section class="tablas"></section>
+        <section class="tablas">
+            <div class="tabla-contenido">
+                <span class="salir">x</span>
+                <h3 class="tabla-nombre">Posiciones fase de grupos: </h3>
+                <table class="tabla">
+                    <tr class="tr">
+                        <td class="td td-principal">Equipo</td>
+                        <td class="td td-principal">PJ</td>
+                        <td class="td td-principal">G</td>
+                        <td class="td td-principal">E</td>
+                        <td class="td td-principal">P</td>
+                        <td class="td td-principal">GF</td>
+                        <td class="td td-principal">GC</td>
+                        <td class="td td-principal">DG</td>
+                        <td class="td td-principal">PTS</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="boton">
+            <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+        </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
