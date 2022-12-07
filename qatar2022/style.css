@@ -207,6 +207,8 @@
 
     table {
         margin: auto;
+        border-collapse: collapse;
+        width: 100%;
     }
 
     .tabla-contenido {
@@ -225,11 +227,12 @@
         font-size: 14px;
         padding: 2px;
         text-align: center;
-        border: 1px solid #000;
+        border: 2px solid #000;
     }
 
     .td-principal {
         color: var(--color-1);
+        font-weight: 700;
     }
 
     .salir {
