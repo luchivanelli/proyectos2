@@ -104,7 +104,7 @@
     }
 
     .grupo {
-        width: 80%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -292,8 +292,8 @@
         font-size: 27px;
     }
 
-    .grupos {
-        width: 70%;
+    .grupo {
+        width: 90%;
     }
 
     .grupo-nombre {
