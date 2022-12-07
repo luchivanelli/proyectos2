@@ -10,7 +10,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
+    overflow-x: hidden;}
 
 
 @media screen and (min-width: 0) {  /*Mobile*/
@@ -22,8 +22,6 @@
         align-items: center;
 
         background-color: var(--color-2);
-        /* background-color: #8a1538;
-        background-image: linear-gradient(90deg, #8a1538 0%, #ffffff 50%, #8a1538 100%); */
         padding: 10px 0;
 }
     
@@ -41,6 +39,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        overflow-y: hidden;
     }
 
     .a-1 {
@@ -66,18 +65,23 @@
     .titulo {
         text-align: center;
         font-size: 24px;
-        padding: 20px 10px;
+        padding: 20px 10px 10px;
         color: var(--color-2);
-        font-weight: 500;
+        font-weight: 700;
+        margin-left: -20px;
+        -webkit-text-stroke: 1px #000;
+
     }
 
-    .titulo b {
+    .titulo-b {
         color: #000;
         letter-spacing: 1px;
         font-size: 25px;
         font-weight: 700;
         font-style: italic;
-        /* -webkit-text-stroke: 0.6px black; */
+        text-align: center;
+        display: block;
+        margin: -20px -50px 15px 0;
     }
 
     .equipos {
@@ -114,6 +118,7 @@
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        overflow-y: hidden;
     }
 
     .grupo-nombre {
@@ -159,6 +164,8 @@
     }
 
     .boton {
+        overflow-y: hidden;
+        width: 40px;
         height: 40px;
         position: fixed;
         bottom: 0;
@@ -167,23 +174,41 @@
         background-color: var(--color-1);
         border-radius: 50%;
         transition: background-color 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid var(--color-1);
+        animation: boton 2s infinite alternate;
     }
 
     .boton a {
         font-size: 30px;
-        padding: 10px;
+        padding: 7px 5px 0;
         color: var(--color-2);
         transition: color 1s;
+        animation: boton2 2s infinite alternate;
     }
 
     .boton:hover {
-        background-color: var(--color-3);
+        background-color: var(--color-2);
         transition: background-color 0.3s;
     }
 
     .boton a:hover {
-        color: #000;
+        color: var(--color-1);
         transition: color 0.3s;
+    }
+
+    @keyframes boton {
+        100% {
+            background-color: var(--color-2);
+        }
+    }
+
+    @keyframes boton2 {
+        100% {
+            color: var(--color-1);
+        }
     }
 
     .span-tabla {
@@ -254,10 +279,80 @@
     .navbar {
         flex-direction: row;
     }
+
+    .navbar a {
+        margin: 0 20px;
+    }
+
+    .titulo {
+        font-size: 26px;
+    }
+
+    .titulo-b {
+        font-size: 27px;
+    }
+
+    .grupos {
+        width: 70%;
+    }
+
+    .grupo-nombre {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    .grupos-tablas {
+        width: 50%;
+        margin: auto;
+    }
+
+    .tabla-contenido {
+        width: 70%;
+    }
+
+    table {
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 1024px) {  /*Desktop*/
     .header-icon {
         max-width: 300px;
+    }
+
+    .navbar a {
+        margin: 0 40px;
+    }
+
+    .grupos-tablas {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .grupo {
+        width: 30%;
+        margin: 0 30px 40px;
+    }
+
+    .grupo-nombre {
+        font-size: 16px;
+    }
+
+    .tabla-contenido {
+        width: 60%;
+    }
+
+    .tabla-nombre {
+        font-size: 18px;
+    }
+
+    .td {
+        font-size: 16px;
+    }
+
+    .boton {
+        width: 50px;
+        height: 50px;
     }
 }
