@@ -1,0 +1,91 @@
+:root {
+    --color-1: #8a1538;
+    --color-2: #dddddd;
+    --color-3: #424B54;
+    --color-4: #07BEB8;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;}
+
+
+@media screen and (min-width: 0) {  /*Mobile*/
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: var(--color-2);
+        padding: 10px 0;
+}
+    
+    .header-icon {
+        min-width: 100px;
+        max-width: 200px;
+    }
+    
+    .header-icon img {
+        width: 100%;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+
+    .a-1 {
+        text-decoration: none;
+        color: var(--color-1);
+        margin-bottom: 2px;
+    }
+
+    .a-2 {
+        text-decoration: none;
+        color: var(--color-1);
+        font-weight: 700;
+    }
+
+    .navbar a:hover {
+        transform: scale(1.05);
+    }
+
+    main {
+        background-color: var(--color-3);
+    }
+
+}
+
+@media screen and (min-width: 768px) {  /*Tablet*/
+    .header-icon {
+        max-width: 250px;
+    }
+
+    .navbar {
+        flex-direction: row;
+    }
+
+    .navbar a {
+        margin: 0 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {  /*Desktop*/
+    .header-icon {
+        max-width: 300px;
+    }
+
+    .navbar a {
+        margin: 0 40px;
+    }
+
+}
